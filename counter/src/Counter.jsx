@@ -22,7 +22,7 @@ class Counter extends Component {
       <div style={{
 
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "left",
         alignItems: "center",
         padding: "20px",
         fontFamily: "Arial",
