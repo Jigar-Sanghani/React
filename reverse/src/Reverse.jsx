@@ -16,11 +16,11 @@ const Reverse = () => {
                     setFlag(false);
                 } else {
                     setSecond(second - 1);
-                    if (second == 0 ) {
+                    if (second == 0) {
                         setSecond(59);
                         setMinute(minute - 1);
                     }
-                    if (minute == 0 ) {
+                    if (minute == 0) {
                         setMinute(59);
                         setHour(hour - 1);
                     }
@@ -31,16 +31,16 @@ const Reverse = () => {
         return () => {
             clearInterval(id);
         };
-    }, [flag, second]);
+    },[flag, second]);
 
     const divide = () => {
         if (time > 0) {
-          let newTime = time / 60;
-          setHour(Math.floor(newTime));
-          setMinute(Math.floor((newTime - Math.floor(newTime)) * 60 - 1));
-          setSecond(59);
+            let newTime = time / 60;
+            setHour(Math.floor(newTime));
+            setMinute(Math.floor((newTime - Math.floor(newTime)) * 60 - 1));
+            setSecond(59);
         }
-      };
+    };
 
     return (
         <div>
