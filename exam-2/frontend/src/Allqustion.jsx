@@ -7,8 +7,6 @@ const Allqustion = () => {
     const fetchQuestions = async () => {
         try {
             const res = await axios.get("http://localhost:4454/qustions/all_qustion");
-            console.log(res);
-
             setQuestions(res.data);
         } catch (error) {
             console.error("Error fetching questions:", error);
@@ -43,24 +41,28 @@ const Allqustion = () => {
         <div>
             {questions.length > 0 ? (
                 questions.map((question) => (
-                    <div key={question._id} style={{ marginBottom: "20px" }}>
+                    <div key={question._id}>
                         <h2>{question.question}</h2>
                         <p
+
                             onClick={(e) => onClickHandler(e, question._id, question.optionA)}
                         >
                             A: {question.optionA}
                         </p>
                         <p
+
                             onClick={(e) => onClickHandler(e, question._id, question.optionB)}
                         >
                             B: {question.optionB}
                         </p>
                         <p
+
                             onClick={(e) => onClickHandler(e, question._id, question.optionC)}
                         >
                             C: {question.optionC}
                         </p>
                         <p
+
                             onClick={(e) => onClickHandler(e, question._id, question.optionD)}
                         >
                             D: {question.optionD}
