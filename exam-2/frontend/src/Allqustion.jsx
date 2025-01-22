@@ -7,6 +7,8 @@ const Allqustion = () => {
     const fetchQuestions = async () => {
         try {
             const res = await axios.get("http://localhost:4454/qustions/all_qustion");
+            console.log(res);
+
             setQuestions(res.data);
         } catch (error) {
             console.error("Error fetching questions:", error);
@@ -44,49 +46,21 @@ const Allqustion = () => {
                     <div key={question._id} style={{ marginBottom: "20px" }}>
                         <h2>{question.question}</h2>
                         <p
-                            style={{
-                                padding: "10px",
-                                backgroundColor: "white",
-                                color: "black",
-                                borderRadius: "5px",
-                                cursor: "pointer",
-                            }}
                             onClick={(e) => onClickHandler(e, question._id, question.optionA)}
                         >
                             A: {question.optionA}
                         </p>
                         <p
-                            style={{
-                                padding: "10px",
-                                backgroundColor: "white",
-                                color: "black",
-                                borderRadius: "5px",
-                                cursor: "pointer",
-                            }}
                             onClick={(e) => onClickHandler(e, question._id, question.optionB)}
                         >
                             B: {question.optionB}
                         </p>
                         <p
-                            style={{
-                                padding: "10px",
-                                backgroundColor: "white",
-                                color: "black",
-                                borderRadius: "5px",
-                                cursor: "pointer",
-                            }}
                             onClick={(e) => onClickHandler(e, question._id, question.optionC)}
                         >
                             C: {question.optionC}
                         </p>
                         <p
-                            style={{
-                                padding: "10px",
-                                backgroundColor: "white",
-                                color: "black",
-                                borderRadius: "5px",
-                                cursor: "pointer",
-                            }}
                             onClick={(e) => onClickHandler(e, question._id, question.optionD)}
                         >
                             D: {question.optionD}

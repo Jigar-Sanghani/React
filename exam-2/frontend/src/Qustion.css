@@ -46,17 +46,3 @@
         transform: scale(1.05);
     }
 }
-
-.submit {
-    height: 50px;
-    width: 350px;
-    border: 0px;
-    background-color: rgba(140, 156, 156, 0.733);
-    transition: all 0.5s;
-    margin-bottom: 02%;
-    cursor: pointer;
-}
-
-.submit:hover {
-    transform: scale(1.05);
-}
