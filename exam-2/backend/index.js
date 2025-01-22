@@ -13,10 +13,10 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')))
 
 
-app.use("/qustion", question_router)
-app.use("/exam", exam_router)
+app.use("/qustions", question_router)
+app.use("/exams", exam_router)
 
-app.listen(8090, () => {
-    console.log("listening on port 8090");
+app.listen(4454, () => {
+    console.log("listening on port 4454 ||");
     db();
 })

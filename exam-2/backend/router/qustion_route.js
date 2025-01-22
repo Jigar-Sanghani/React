@@ -3,9 +3,9 @@ const { get_all_questions, get_questionById, create_question, update_question, d
 
 const question_router = Router()
 
-question_router.get("/all", get_all_questions)
-question_router.get("/:id", get_questionById)
-question_router.post("/create", create_question)
+question_router.get("/all_qustion", get_all_questions)
+question_router.get("/qustion/:id", get_questionById)
+question_router.post("/create_qustion", create_question)
 question_router.patch("/update/:id", update_question)
 question_router.delete("/delete/:id", delete_question)
 
