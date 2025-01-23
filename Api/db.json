@@ -1,0 +1,19 @@
+{
+    "course": [
+        {
+            "Name": "Full-Stack",
+            "Fee": 120000,
+            "Duration": "8"
+        },
+        {
+            "Name": "Ui-Ux",
+            "Fee": 100000,
+            "Duration": "10"
+        },
+        {
+            "Name": "Animation",
+            "Fee": 130000,
+            "Duration": "12"
+        }
+    ]
+}
