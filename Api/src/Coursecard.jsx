@@ -1,13 +1,14 @@
 import React from 'react';
 
-const Coursecard = ({ id, ele, onDelete }) => {
+const Coursecard = ({ title, fee, duration, onDelete, id }) => {
     return (
         <div>
-            <h1>{ele.Name}</h1>
-            <h2>{ele.Fee}</h2>
+            <h1>{title}</h1>
+            <h2>{fee}</h2>
+            <p>{duration} : months</p>
             <button onClick={() => onDelete(id)}>Delete</button>
         </div>
-    );
+    );``
 };
 
 export default Coursecard;
