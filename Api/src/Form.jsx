@@ -38,6 +38,7 @@ const Form = () => {
                     name="title"
                     onChange={handleInput}
                     placeholder='Enter Course Name :'
+                    required
                 /><br /><br />
 
                 <input
@@ -45,6 +46,7 @@ const Form = () => {
                     name="fee"
                     onChange={handleInput}
                     placeholder='Enter Course Fee :'
+                    required
                 /><br /><br />
 
                 <input
@@ -52,7 +54,8 @@ const Form = () => {
                     name="duration"
                     onChange={handleInput}
                     placeholder='Enter Course Duration :'
-                /><br /><br />
+                    required
+                /><br /><br />  
 
                 <input
                     type="submit"

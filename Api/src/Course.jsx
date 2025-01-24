@@ -25,7 +25,7 @@ const Course = () => {
 
     useEffect(() => {
         getCourse()
-    }, []);
+    }, [handledelete]);
 
 
     return (
