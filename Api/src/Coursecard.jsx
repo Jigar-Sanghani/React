@@ -1,9 +1,10 @@
 import React from 'react';
+import './Coursecard.css';
 
 const Coursecard = ({ title, fee, duration, onDelete, id }) => {
 
     return (
-        <div>
+        <div className='course-card'>
             <h1>{`Title : ${title}`}</h1>
             <h2>{`Fee : ${fee}`}</h2>
             <h3>{`Time : ${duration}`}</h3>
