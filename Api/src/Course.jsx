@@ -27,14 +27,12 @@ const Course = () => {
         getCourse()
     }, []);
 
-    console.log(data);
-
 
     return (
         <div>
-            {data.map((ele) => {
+            {data.map((ele) => (
                 <Coursecard key={ele.id} {...ele} onDelete={handledelete} />
-            })}
+            ))}
         </div>
     )
 }

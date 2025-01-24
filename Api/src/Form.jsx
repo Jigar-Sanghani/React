@@ -48,7 +48,7 @@ const Form = () => {
                 /><br /><br />
 
                 <input
-                    type="text"
+                    type="number"
                     name="duration"
                     onChange={handleInput}
                     placeholder='Enter Course Duration :'
@@ -57,7 +57,7 @@ const Form = () => {
                 <input
                     type="submit"
                     value={"Add"}
-                />
+                /><br /><br />
 
             </form>
         </div>
