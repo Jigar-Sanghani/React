@@ -15,7 +15,7 @@ const Login = () => {
 
     let handleSubmit = async (e) => {
         e.preventDefault()
-        let res = await axios.post("http://localhost:4454/api/user/login", data);
+        let res = await axios.post("http://localhost:4454/api/v1/user/login", data);
         console.log(res.data);
         setData({ email: "", password: "" })
     }
@@ -25,9 +25,9 @@ const Login = () => {
             <h1>----- Log-In ----- </h1>
 
             <form onSubmit={handleSubmit}>
-                <input type="email" placeholder='Enter Your Email Address' onChange={handleChange} value={data.email} />
-                <input type="text" placeholder='Enter Your Password' onChange={handleChange} value={data.password} />
-                <input type="submit" value={Log-In} />
+                <input type="email" placeholder='Enter Your Email Address' onChange={handleChange} value={data.email} /> <br /><br />
+                <input type="text" placeholder='Enter Your Password' onChange={handleChange} value={data.password} /> <br /><br />
+                <input type="submit" value={"Log-In"} /> <br /><br />
             </form>
         </div>
     )

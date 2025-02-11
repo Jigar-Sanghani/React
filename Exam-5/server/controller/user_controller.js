@@ -14,7 +14,7 @@ const create_user = async (req, res) => {
     user = await User.create(req.body);
 
     let token = await generate_Token({
-        name: user.name,
+        username: user.username,
         role: user.role,
         id: user.id,
     });
@@ -38,7 +38,7 @@ const login = async (req, res) => {
     }
 
     let token = await generate_Token({
-        name: user.name,
+        username: user.username,
         role: user.role,
         id: user.id,
     });
