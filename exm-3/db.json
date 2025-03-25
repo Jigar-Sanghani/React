@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "77ad",
+      "name": "jigar",
+      "age": "233",
+      "email": "jigar@gmail.com",
+      "password": "567"
+    }
+  ]
+}
